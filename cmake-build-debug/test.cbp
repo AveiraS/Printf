@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/asmall/Desktop/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/asmall/Desktop/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/asmall/Desktop/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/Users/asmall/Desktop/test/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asmall/Desktop/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asmall/Desktop/test/."/>
+					<Add directory="/Users/asmall/Desktop/test/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/Users/asmall/Desktop/test/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/asmall/Desktop/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/asmall/Desktop/test/."/>
+					<Add directory="/Users/asmall/Desktop/test/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/asmall/Desktop/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/asmall/Desktop/test/ft_itoa_base_pf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_printf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_printf.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_putwchar_pf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_putwstr_pf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_signed_nbr_len.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_uitoa_base_pf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_unsigned_nbr_len.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/ft_wstrsize_pf.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_abs.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_atoi.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_bzero.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isalnum.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isalpha.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isascii.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isdigit.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_islower.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isprint.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isspace.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_isupper.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_itoa.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_itoa_base.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstadd.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstdel.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstdelone.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstiter.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstmap.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_lstnew.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memalloc.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memccpy.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memchr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memcmp.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memcpy.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memdel.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memmove.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_memset.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putchar.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putchar_fd.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putendl.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putendl_fd.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putnbr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putnbr_fd.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putstr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_putstr_fd.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strcat.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strchr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strclr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strcmp.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strcpy.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strcspn.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strdel.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strdup.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strequ.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_striter.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_striteri.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strjoin.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strlcat.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strlcpy.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strlen.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strmap.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strmapi.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strncat.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strncmp.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strncpy.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strnequ.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strnew.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strnstr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strrchr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strsplit.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strstr.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strsub.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_strtrim.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_swap.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_tolower.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/ft_toupper.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/get_next_line.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/libft/libft.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/main.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/parse_modifiers.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_binary.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_char.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_control_char.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_decimal.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_decimal_padding.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_hexadecimal.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_octal.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_percent_sign.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_pointer.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_string.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/print_unsigned_decimal.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/process_string.c">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/asmall/Desktop/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
