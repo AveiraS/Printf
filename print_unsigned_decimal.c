@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_unsigned_decimal.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fpetras <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/08 08:06:19 by fpetras           #+#    #+#             */
-/*   Updated: 2017/12/14 09:38:23 by fpetras          ###   ########.fr       */
+/*   Created: 2019/12/08 08:06:19 by asmall            #+#    #+#             */
+/*   Updated: 2019/12/14 09:38:23 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	ft_print_unsigned_decimal_left_align(intmax_t nbr, t_struct *f)
 	int nbrlen;
 
 	nbrlen = ft_unsigned_nbr_len(nbr, 10);
-	if (nbr == 0 && f->precision_specified && !f->precision)
+	if (nbr == 0 && f->dot && !f->precision)
 	{
 		while (f->width)
 		{
@@ -38,7 +38,7 @@ static void	ft_print_unsigned_decimal_left_align(intmax_t nbr, t_struct *f)
 
 static void	ft_padding(int nbrlen, t_struct *f)
 {
-	if (!f->precision_specified)
+	if (!f->dot)
 		while (f->width-- > nbrlen)
 		{
 			if (f->zero)
@@ -66,7 +66,7 @@ static void	ft_print_unsigned_decimal_right_align(uintmax_t nbr, t_struct *f)
 	int nbrlen;
 
 	nbrlen = ft_unsigned_nbr_len(nbr, 10);
-	if (nbr == 0 && f->precision_specified && !f->precision)
+	if (nbr == 0 && f->dot && !f->precision)
 	{
 		while (f->width)
 		{

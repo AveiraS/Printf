@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_string.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fpetras <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/09 08:47:47 by fpetras           #+#    #+#             */
-/*   Updated: 2017/12/14 09:46:32 by fpetras          ###   ########.fr       */
+/*   Created: 2019/12/09 08:47:47 by asmall            #+#    #+#             */
+/*   Updated: 2019/12/14 09:46:32 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	ft_print_string_left_align(char *str, t_struct *f)
 	if (!str)
 		str = "(null)";
 	strlen = ft_strlen(str);
-	if (f->precision_specified && strlen > 0 && strlen > f->precision)
+	if (f->dot && strlen > 0 && strlen > f->precision)
 		strlen = f->precision;
 	f->len += write(f->fd, str, strlen);
 	while (f->width > strlen)
@@ -36,7 +36,7 @@ static void	ft_print_string_right_align(char *str, t_struct *f)
 	if (!str)
 		str = "(null)";
 	strlen = ft_strlen(str);
-	if (f->precision_specified && strlen > 0 && strlen > f->precision)
+	if (f->dot && strlen > 0 && strlen > f->precision)
 		strlen = f->precision;
 	while (f->width > strlen)
 	{
@@ -56,7 +56,7 @@ static void	ft_print_wide_string_left_align(wchar_t *wstr, t_struct *f)
 	if (!wstr)
 		wstr = L"(null)";
 	wstrsize = ft_wstrsize_pf(wstr);
-	if (f->precision_specified && wstrsize > 0 && wstrsize > f->precision)
+	if (f->dot && wstrsize > 0 && wstrsize > f->precision)
 		wstrsize = f->precision;
 	ft_putwstr_pf(wstr, f, wstrsize);
 	if (f->len == -1)
@@ -75,7 +75,7 @@ static void	ft_print_wide_string_right_align(wchar_t *wstr, t_struct *f)
 	if (!wstr)
 		wstr = L"(null)";
 	wstrsize = ft_wstrsize_pf(wstr);
-	if (f->precision_specified && wstrsize > 0 && wstrsize > f->precision)
+	if (f->dot && wstrsize > 0 && wstrsize > f->precision)
 		wstrsize = f->precision;
 	ft_check_mb_cur_max(wstr, f);
 	if (f->len == -1)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   process_string.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fpetras <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: asmall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/14 09:23:14 by fpetras           #+#    #+#             */
-/*   Updated: 2017/12/14 09:34:14 by fpetras          ###   ########.fr       */
+/*   Created: 2019/12/14 09:23:14 by asmall            #+#    #+#             */
+/*   Updated: 2019/12/14 09:34:14 by asmall           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void		ft_reset_struct(t_struct *f)
 	f->zero = 0;
 	f->hash = 0;
 	f->width = 0;
-	f->precision_specified = 0;
+	f->dot = 0;
 	f->precision = 0;
 	f->length = 0;
 }

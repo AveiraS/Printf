@@ -17,7 +17,7 @@ static void	ft_print_binary_left_align(intmax_t nbr, t_struct *f)
 	int nbrlen;
 
 	nbrlen = ft_unsigned_nbr_len(nbr, 2);
-	if (nbr == 0 && f->precision_specified && !f->precision)
+	if (nbr == 0 && f->dot && !f->precision)
 	{
 		while (f->width)
 		{
@@ -42,7 +42,7 @@ static void	ft_print_binary_left_align(intmax_t nbr, t_struct *f)
 
 static void	ft_padding(int nbrlen, t_struct *f)
 {
-	if (!f->precision_specified)
+	if (!f->dot)
 		while (f->width > nbrlen)
 		{
 			if (f->zero)
@@ -70,7 +70,7 @@ static void	ft_print_binary_right_align(uintmax_t nbr, t_struct *f)
 	int nbrlen;
 
 	nbrlen = ft_unsigned_nbr_len(nbr, 2);
-	if (nbr == 0 && f->precision_specified && !f->precision)
+	if (nbr == 0 && f->dot && !f->precision)
 	{
 		while (f->width)
 		{

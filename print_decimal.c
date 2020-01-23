@@ -14,7 +14,7 @@
 
 static int	ft_decimal_left2(intmax_t nbr, int n, t_struct *f)
 {
-    if (nbr == 0 && f->precision_specified && !f->precision)
+    if (nbr == 0 && f->dot && !f->precision)
     {
         if (f->plus && f->width)
             f->width--;
@@ -65,7 +65,7 @@ static void	ft_print_decimal_left_align(intmax_t nbr, t_struct *f)
 
 static int	ft_decimal_right2(intmax_t nbr, int n, t_struct *f, int nbrlen)
 {
-    if (nbr == 0 && f->precision_specified && !f->precision)
+    if (nbr == 0 && f->dot && !f->precision)
     {
         if (f->plus && f->width)
             f->width--;
@@ -78,7 +78,7 @@ static int	ft_decimal_right2(intmax_t nbr, int n, t_struct *f, int nbrlen)
             f->len += write(f->fd, "+", 1);
         return (1);
     }
-    if (f->space && n == 0 && (f->width <= nbrlen || (f->width >= nbrlen && !f->precision_specified)))
+    if (f->space && n == 0 && (f->width <= nbrlen || (f->width >= nbrlen && !f->dot)))
     {f->len += write(f->fd, " ", 1);
         f->width--;}
     if (f->plus && f->zero && n == 0 && (f->precision > f->width || !f->precision)) {
@@ -103,7 +103,7 @@ static void	ft_print_decimal_right_align(intmax_t nbr, t_struct *f)
     nbr = (nbr < 0) ? -nbr : nbr;
     if (ft_decimal_right2(nbr, n, f, nbrlen))
         return ;
-    if (f->plus && n == 0 && f->width && !f->precision_specified)
+    if (f->plus && n == 0 && f->width && !f->dot)
         nbrlen++;
     ft_padding_right_align(nbrlen, n, f);
     if (f->plus != 2 && ((!f->zero && f->plus && n == 0) || (f->precision && f->zero && f->plus && n == 0)))

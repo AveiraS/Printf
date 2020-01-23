@@ -37,7 +37,7 @@ typedef struct	s_struct
 	int			hash;
 
 	int			width;
-	int			precision_specified;
+	int			dot;
 	int			precision;
 	int			length;
 }				t_struct;

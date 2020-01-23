@@ -46,7 +46,7 @@ static void	ft_precision(const char *format, t_struct *f, va_list ap)
 	if (format[f->i] == '.')
 	{
 		f->i++;
-		f->precision_specified = 1;
+		f->dot = 1;
 		if (ft_isdigit(format[f->i]))
 		{
 			f->precision = ft_atoi(&format[f->i]);
@@ -59,12 +59,12 @@ static void	ft_precision(const char *format, t_struct *f, va_list ap)
 			if (precision >= 0)
 				f->precision = precision;
 			else
-				f->precision_specified = 0;
+				f->dot = 0;
 			while (format[f->i] == '*')
 				f->i++;
 		}
 	}
-//	if (f->precision_specified && !f->minus)
+//	if (f->dot && !f->minus)
 //		f->space = 0;
 }
 

@@ -27,7 +27,7 @@ void	ft_padding_left_align(int nbrlen, t_struct *f)
 
 void	ft_padding_right_align(int nbrlen, int n, t_struct *f)
 {
-	if (!f->precision_specified)
+	if (!f->dot)
 		while (f->width-- > nbrlen)
 		{
 			if (f->zero)
