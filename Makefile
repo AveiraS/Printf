@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fpetras <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: asmall <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/12/03 07:33:44 by fpetras           #+#    #+#              #
-#    Updated: 2018/04/24 12:13:54 by fpetras          ###   ########.fr        #
+#    Created: 2017/12/03 07:33:44 by asmall            #+#    #+#              #
+#    Updated: 2018/04/24 12:13:54 by asmall           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,6 @@ FT_PRINTF_SRC = ft_printf.c \
 				print_binary.c \
 				print_char.c print_control_char.c print_string.c \
 				print_percent_sign.c \
-				\
 				ft_itoa_base_pf.c \
 				ft_signed_nbr_len.c \
 				ft_putwchar_pf.c ft_putwstr_pf.c ft_wstrsize_pf.c

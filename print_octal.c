@@ -12,6 +12,10 @@
 
 #include "ft_printf.h"
 
+/*
+** Работа с восьмеричной системой
+*/
+
 static void	ft_print_octal_left_align(intmax_t nbr, t_struct *f)
 {
 	int nbrlen;
